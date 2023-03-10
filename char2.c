@@ -5,9 +5,15 @@
 #include <stdio.h>
 
 int main(void) {
-	printf("%d %d %d %d\n", 2 * 2, 2 * 3, 2 * 4, 2 * 5);
-	printf("10 + 20 = 30\n ");
-	printf("%d + %d = %d\n", 10, 20, 30);
-	printf("2023-03-10\n");
+	printf("2023-03-10\n\n10 + 20 = 30\n\n");
+	printf("%d %d %d %d\n\n",2 * 2, 2 * 3, 2 * 4, 2 * 5);
+	printf("10 + 20 = 30\n\n");
+	printf("%d + %d = %d\n\n",10, 20, 30);
+	printf("이름은 장준혁\n");
+	printf("학번은 2021-12345\n");
+	printf("생년월일은 1900년 1월 1일\n\n");
+	printf("이름은 장준혁\n학번은 2021-12345\n생년월일은 1900년 1월 1일\n\n");
+	printf("이름은 장준혁\n학번은 2021-12345\n");
+	printf("생년월일은 1900년 1월 1일\n");
 	return 0;
 }
