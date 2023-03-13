@@ -2,17 +2,27 @@
 * 계산기 ver 0.2
 */
 #include <stdio.h>
-int main(void) {
-        int x, y;
-        // 합, 차, 곱, 나눈 몫, 나머지
-        int sum, diff, mult, quot, rem;
 
-        x = 107; y = 88;
-        sum = x + y;
-        diff = x - y;
-        mult = x * y;
-        quot = x / y;
-        rem = x % y;
+int main(void) {
+    int x, y;
+    // 합, 차, 곱, 나눈 몫, 나머지
+    int sum, diff, mult, quot, rem;
+
+    x = 107; y = 88;
+    //더하기
+    sum = x + y;
+    
+    // 차
+    diff = x - y;
+
+    // 곱
+    mult = x * y;
+
+    //몫
+    quot = x / y;
+
+    // 나머지
+    rem = x % y;
 
         printf("%d 더하기 %d은(는) %d 입니다.\n", x, y, sum);
         printf("%d 빼기 %d은(는) %d 입니다.\n", x, y, diff);
