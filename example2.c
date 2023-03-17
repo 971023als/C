@@ -12,7 +12,8 @@ int main(void) {
 	printf("코끼리를 삼킨 보아뱀\n");
 	printf("    %d%d%d\n", x, x, x);
 	printf("    %d%d%d\n", x, x, x);
-	printf("%d%d%d%d%d%d%d%d%d\n", x, x, x, x, x, x, x, x, x);
+	printf("%d%d%d%d%d%d%d%d%d\n",
+	     x, x, x, x, x, x, x, x, x);
 
 	return 0;
 }
