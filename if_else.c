@@ -6,9 +6,7 @@
 #include <stdio.h>
 int main(void) {
 
-	int a;
-
-	int b;
+	int a, b;
 
 	printf("a b >> ");
 
@@ -18,7 +16,8 @@ int main(void) {
 	}
 
 	else {
-		printf("%d  \n", a / b );
+		int quot = a / b;
+		printf("%d / %d = %d \n", a, b, quot );
 	}
 
 	return 0;
