@@ -11,12 +11,12 @@ int main(void) {
 	printf("a b >> ");
 
 	scanf_s("%d %d", &a, &b);
-	if (b == 0) {
-		printf("0으로 나눌 수 없습니다\n");
+	if (b == 0) {		//b가 0이면
+		printf("0으로 나눌 수 없습니다\n"); // 0으로 추력
 	}
 
-	else {
-		int quot = a / b;
+	else {			// b가 0이 아니면
+		int quot = a / b;		// a를 b로 나눠서 출력
 		printf("%d / %d = %d \n", a, b, quot );
 	}
 
