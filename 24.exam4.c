@@ -12,17 +12,17 @@ int main(void) {
 	printf("a b >>");
 	scanf_s("%d%d", &a, &b);
 
-	if (a <= b) {		//b가 0이면
-		printf("a = %d, b = %d", a, b); // 0으로 추력
+	if (a <= b) {		
+		printf("a = %d, b = %d", a, b); 
 	}
 
-	if (a > b) {		//b가 0이면
+	if (a > b) {		
 
 		tmp = a;
 		a = b;
 		b = tmp;
 
-		printf("a = %d, b = %d", a, b); // 0으로 추력
+		printf("a = %d, b = %d", a, b); 
 	}
 
 	return 0;
