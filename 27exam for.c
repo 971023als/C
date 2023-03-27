@@ -9,8 +9,12 @@
 #include <stdbool.h>
 
 int main(void) {
-	int n;
-	for (int i = 1; i <= 3; i++) {
+	int m,n;
+
+	printf("몇 번 반복합니까? ");
+	scanf_s("%d", &m);
+
+	for (int i = 1; i <= m; i++) {
 		printf("정수를 입력하세요>> ");
 		scanf_s("\n%d", &n);
 		printf("%d\n",n);
