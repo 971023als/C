@@ -8,9 +8,9 @@
 #include <stdbool.h>
 
 int main(void) {
-	char ch;
+	char gender;
 	printf("성별을 입력하세요(M/F)>> ");
 	scanf_s("%c", &ch, 1);
-	printf("당신의 성별은 %c입니다\n", ch);
+	printf("당신의 성별은 %c입니다\n", gender);
 	return 0;
 }
