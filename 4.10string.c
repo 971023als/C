@@ -9,8 +9,10 @@
 
 int main(void) { // 1번
 
-	char str[100] = "This is a string.";
-	printf("문자 배열 str에 저장된 문자열은 : %s\n", str);
+	char str1[50] = "This is";
+	char str2[50] = "a string.";
+	printf("str1: %s\nstr2: %s\n", str1, str2);
+	printf("str1str2: %s %s\n", str1, str2);
 
 	return 0;
 }
