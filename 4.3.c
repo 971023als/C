@@ -10,7 +10,7 @@
 int main(void) {
 	char gender;
 
-	printf("input a char>>");
+	printf("성별>>");
 	scanf_s("%c", &gender, 1);
 
 	switch (gender) {
@@ -20,10 +20,9 @@ int main(void) {
 	case 'f': printf("여자입니다."); break;
 	case 'F': printf("여자입니다."); break;
 
-	default: print("잘못 입력했습니다.\n"); break;
+	default: printf("잘못 입력했습니다.\n"); break;
 
 	}
-	
 
 	return 0;
 }
