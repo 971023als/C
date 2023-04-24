@@ -18,13 +18,13 @@ int sub(int, int);
 // 인트로
 void print_title(void)
 {
-    printf("===두 정수를 더하는 프로그램===\n");
+    printf("===두 정수를 더하는 프로그램===\n\n");
 }
 
 // 인트로 1
 void print_title1(void)
 {
-    printf("===두 정수를 뺴는 프로그램===\n");
+    printf("===두 정수를 뺴는 프로그램===\n\n");
 }
 
 int sum(int x, int y) {
