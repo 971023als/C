@@ -15,8 +15,17 @@ int sum(int, int);
 // 두 정수를 뺴는 함수
 int sub(int, int);
 
-// 정수 1개를 입력 받아서 3으로 나눈 나머지를 출력하는 함수
-int per(int, int);
+// 인트로
+void print_title(void)
+{
+    printf("===두 정수를 더하는 프로그램===\n");
+}
+
+// 인트로 1
+void print_title1(void)
+{
+    printf("===두 정수를 뺴는 프로그램===\n");
+}
 
 int sum(int x, int y) {
     int res = x + y;
@@ -28,21 +37,17 @@ int sub(int a, int b) {
     return result1;
 }
 
-int per(int c) {
-    int result2 = c % 3 ;
-    return result2;
-}
-
 int main(void) {
+
+    print_title();
+
     int result = sum(10, 20);
     printf("%d\n", result);
 
+    print_title1();
+
     int result1 = sub(20, 10);
     printf("%d\n", result1);
-
-    scanf_s("%d", &c);
-    int result2 = per(c);
-    printf("%d\n", result2);
 
     return 0;
 }
