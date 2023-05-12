@@ -25,18 +25,19 @@ int check_entry(int ages[], int heights[]) {
 
 int main(void) {
     int ages[4], heights[4];
-    printf("4명의 나이와 키를 입력하십시오. 각각의 나이와 키는 공백으로 구분합니다.\n");
+
     for (int i = 0; i < 4; i++) {
         printf("입장객 %d: ", i + 1);
         scanf("%d%d", &ages[i], &heights[i]);
     }
 
     int result = check_entry(ages, heights);
+
     if (result == 0) {
         printf("이 팀은 입장 가능합니다.\n");
     }
     else {
-        printf("입장객 %d 때문에 팀은 입장할 수 없습니다.\n", result);
+        printf("%d번 손님 때문에 팀은 입장할 수 없습니다.\n", result);
     }
 
     return 0;
