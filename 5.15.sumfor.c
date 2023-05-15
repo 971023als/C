@@ -11,14 +11,17 @@
 
 
 int main(void) {
-    int num[5] = { 1, 2, 3, 4, 5 };
+    for (int i = 1; i <= 3; i++) {
+        int num[5] = { 1, 2, 3, 4, 5 };
 
-    int sum = 0;
-    for (int j = 0; j < 5; j++) {
-        sum += num[j];
-        printf("%d", num[j]);
+        int sum = 0;
+        for (int j = 0; j < 5; j++) {
+            printf("num[%d] =", j);
+            scanf_s("%d", &num[j]);
+            sum += num[j];
+        }
+        printf("\n");
+        printf("sum = %d\n", sum);
     }
-    printf("\n");
-    printf("sum = %d\n", sum);
     return 0;
 }
