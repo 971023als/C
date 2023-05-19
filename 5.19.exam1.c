@@ -11,12 +11,15 @@
 
 
 int main(void) {
-
-    for (int i = 1; i < 3; i++) {
-        
-        printf("%d\n", i);
+    // 3단부터 5단까지
+    for (int i = 2; i <= 8; i++) {
+        if (i % 2 == 0) {
+            printf("<구구단 %d단>\n", i);
+            for (int j = 1; j <= 19; j++) {
+                printf("%d * %d = %d\n", i, j, i * j);
+            }
+            printf("\n");
+        }
     }
-    puts("끝");
-
     return 0;
 }
