@@ -36,10 +36,17 @@ int main(void) {
 
 		else if (op == '*') { result = x * y; }
 
-		else if (op == '/') { result = x / y; }
+		else if (op == '/') {
+			if (y != 0) {
+				result = x / y;
+			} else {
+				printf("0으로 나눌 수 없습니다.\n");
+				continue;
+			}
+		}
 
 		else { result = 0; } // +-*/가 아닐 때도 일단 무시
-				
+
 		printf("%d%c%d = %d\n", x, op, y, result);
 	}
 	return 0;
