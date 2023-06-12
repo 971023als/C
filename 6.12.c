@@ -9,11 +9,19 @@
 #include <ctype.h>
 
 int main() {
-    int x = 10, y = 20;
+    int x, y;
+    printf("x, y 입력:");
+    scanf_s("%d %d", &x, &y);
 
-    int smaller = (x < y) ? x : y;
-
-    printf("작은 값 %d\n", smaller);
+    if (x < y) {
+        printf("작은 값 %d\n", x);
+    }
+    else if (x > y) {
+        printf("작은 값 %d\n", y);
+    }
+    else { // x == y
+        printf("두 수는 같습니다: %d\n", x);
+    }
 
     return 0;
 }
